@@ -1,0 +1,18 @@
+[submodule "nerf_vo/thirdparty/omnidata"]
+	path = nerf_vo/thirdparty/omnidata
+	url = https://github.com/EPFL-VILAB/omnidata.git
+[submodule "nerf_vo/thirdparty/tiny_cuda_nn"]
+	path = nerf_vo/thirdparty/tiny_cuda_nn
+	url = https://github.com/jens-nau/tiny-cuda-nn.git
+[submodule "nerf_vo/thirdparty/nerfstudio"]
+	path = nerf_vo/thirdparty/nerfstudio
+	url = https://github.com/jens-nau/nerfstudio.git
+[submodule "nerf_vo/thirdparty/lietorch"]
+	path = nerf_vo/thirdparty/lietorch
+	url = https://github.com/princeton-vl/lietorch.git
+[submodule "nerf_vo/thirdparty/dpvo"]
+	path = nerf_vo/thirdparty/dpvo
+	url = https://github.com/jens-nau/DPVO.git
+[submodule "nerf_vo/thirdparty/nerf_slam"]
+	path = nerf_vo/thirdparty/nerf_slam
+	url = https://github.com/jens-nau/NeRF-SLAM.git
