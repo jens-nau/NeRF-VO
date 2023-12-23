@@ -1,0 +1,24 @@
+dir_dataset: 'datasets/7-Scenes'
+dir_prediction: 'predictions'
+dataset_name: '7-scenes'
+scene_names: ['chess', 'fire', 'heads', 'office', 'pumpkin', 'redkitchen', 'stairs']
+num_evaluation_frames: 125
+tracking_module: 'dpvo'
+enhancement_module: 'depth'
+mapping_module: 'nerfstudio'
+multithreading: True
+performance_tracking: True
+cache_dataset: True
+first_frame_index: 0
+last_frame_index: -1
+frame_stride: 1
+num_keyframes: 128
+frame_height: 240
+frame_width: 320
+patches_per_frame: 96
+removal_window: 28
+optimization_window: 13
+patch_lifetime: 15
+keyframe_threshold: 8
+mapping_iterations: 8192
+mapping_snapshot_iterations: 8192

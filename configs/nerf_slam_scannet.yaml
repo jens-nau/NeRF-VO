@@ -1,0 +1,21 @@
+dir_dataset: 'datasets/ScanNet'
+dir_prediction: 'predictions'
+dataset_name: 'scannet'
+scene_names: ['scene0000_00', 'scene0059_00', 'scene0106_00', 'scene0169_00', 'scene0181_00', 'scene0207_00']
+num_evaluation_frames: 125
+tracking_module: 'droid-slam'
+enhancement_module: 'none'
+mapping_module: 'instant-ngp'
+multithreading: True
+performance_tracking: True
+cache_dataset: True
+first_frame_index: 0
+last_frame_index: -1
+frame_stride: 1
+num_keyframes: 512
+frame_height: 240
+frame_width: 320
+perform_global_bundle_adjustment: False
+compute_covariances: True
+mapping_iterations: 8192
+mapping_snapshot_iterations: 8192

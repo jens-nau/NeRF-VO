@@ -1,0 +1,21 @@
+dir_dataset: 'datasets/Replica-iMAP'
+dir_prediction: 'predictions'
+dataset_name: 'replica'
+scene_names: ['room0', 'room1', 'room2', 'office0','office1', 'office2', 'office3', 'office4']
+num_evaluation_frames: 125
+tracking_module: 'droid-slam'
+enhancement_module: 'none'
+mapping_module: 'instant-ngp'
+multithreading: True
+performance_tracking: True
+cache_dataset: True
+first_frame_index: 0
+last_frame_index: -1
+frame_stride: 2
+num_keyframes: 192
+frame_height: 360
+frame_width: 640
+perform_global_bundle_adjustment: False
+compute_covariances: True
+mapping_iterations: 8192
+mapping_snapshot_iterations: 8192

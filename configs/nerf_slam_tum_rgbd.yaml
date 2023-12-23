@@ -1,0 +1,21 @@
+dir_dataset: 'datasets/TUM-RGBD'
+dir_prediction: 'predictions'
+dataset_name: 'tum-rgbd'
+scene_names: ['rgbd_dataset_freiburg1_desk', 'rgbd_dataset_freiburg2_xyz', 'rgbd_dataset_freiburg3_long_office_household']
+num_evaluation_frames: 125
+tracking_module: 'droid-slam'
+enhancement_module: 'none'
+mapping_module: 'instant-ngp'
+multithreading: True
+performance_tracking: True
+cache_dataset: True
+first_frame_index: 0
+last_frame_index: -1
+frame_stride: 1
+num_keyframes: 192
+frame_height: 240
+frame_width: 320
+perform_global_bundle_adjustment: False
+compute_covariances: True
+mapping_iterations: 8192
+mapping_snapshot_iterations: 8192
