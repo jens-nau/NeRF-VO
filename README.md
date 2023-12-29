@@ -4,10 +4,21 @@ Real-Time Sparse Visual Odometry with Neural Radiance Fields
 
 ## Installation
 
+### Clone repository
+```bash
+git clone https://github.com/jens-nau/NeRF-VO.git
+git submodule update --init --recursive
+```
+
+### Create conda environment
+```bash
+conda create -n nerf_vo python=3.8
+```
+
 ### PyTorch and PyTorch Scatter
 ```bash
-pip install torch==1.9.0+cu118 torchvision==0.10.0+cu118 -f https://download.pytorch.org/whl/cu118
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.9.0+cu118.html
+pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
 ```
 
 ### Requirements
