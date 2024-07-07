@@ -1,6 +1,42 @@
-# NeRF-VO
+<p align="center">
 
-Real-Time Sparse Visual Odometry with Neural Radiance Fields
+  <h1 align="center">NeRF-VO: Real-Time Sparse Visual Odometry With Neural Radiance Fields</h1>
+  <p align="center">
+    <a href="https://www.linkedin.com/in/jens-naumann/" target="_blank"><strong>Jens Naumann</strong></a>
+    ·
+    <a href="https://binbin-xu.github.io/" target="_blank"><strong>Binbin Xu</strong></a>
+    ·
+    <a href="https://scholar.google.ch/citations?user=SmGQ48gAAAAJ&hl=de" target="_blank"><strong>Stefan Leutenegger</strong></a>
+    ·
+    <a href="https://xingxingzuo.github.io/" target="_blank"><strong>Xingxing Zuo</strong></a>
+</p>
+
+  <h2 align="center">IEEE Robotics and Automation Letters 2024</h2>
+  <h3 align="center"><a href="https://ieeexplore.ieee.org/document/10578010" target="_blank">Paper</a> | <a href="https://youtu.be/El3-hSnuOz0?si=bGjMPECjWvTAlCLg"  target="_blank">Video</a> | <a href="" target="_blank">Project Page</a></h3>
+  <div align="center"></div>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#installation">Installation</a>
+    </li>
+    <li>
+      <a href="#datasets">Datasets</a>
+    </li>
+    <li>
+      <a href="#execution">Execution</a>
+    </li>
+    <li>
+      <a href="#citation">Citation</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ol>
+</details>
 
 ## Installation
 
@@ -124,3 +160,17 @@ bash scripts/download_tum_rgbd.sh
 ```bash
 python run.py
 ```
+
+## Citation
+If you find our code or paper useful, please cite:
+```bibtex
+@article{naumann2024nerfvo,
+  author={Naumann, Jens and Xu, Binbin and Leutenegger, Stefan and Zuo, Xingxing},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={NeRF-VO: Real-Time Sparse Visual Odometry With Neural Radiance Fields}, 
+  year={2024},
+}
+```
+
+## Contact
+Contact [Jens Naumann](mailto:jens.naumann@tum.de) and [Xingxing Zuo](mailto:xingxing.zuo@tum.de) for questions, comments and bug reports.
