@@ -39,6 +39,7 @@
 </details>
 
 ## Installation
+Tested on Ubuntu 20.04. 
 
 ### Clone repository
 ```bash
@@ -53,7 +54,8 @@ conda create -n nerf_vo python=3.8
 
 ### PyTorch and PyTorch Scatter
 ```bash
-pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118 
+# Don't worry about the warning of the missing pkgs, we will install them later
 pip install torch-scatter -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
 ```
 
@@ -71,12 +73,14 @@ python setup.py install
 
 #### Build Lietorch
 ```bash
+cd ../../../../../
 cd nerf_vo/thirdparty/lietorch
 python setup.py install
 ```
 
 #### Build DPVO
 ```bash
+cd ../../../
 cd nerf_vo/thirdparty/dpvo
 wget https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.zip
 unzip eigen-3.4.0.zip -d thirdparty
@@ -86,6 +90,7 @@ pip install .
 ### Download pre-trained models
 #### DPVO
 ```bash
+cd ../../../
 wget https://www.dropbox.com/s/nap0u8zslspdwm4/models.zip -P nerf_vo/build/dpvo/
 ```
 
@@ -102,6 +107,7 @@ gdown '1wNxVO4vVbDEMEpnAi_jwQObf2MFodcBR&confirm=t' -O nerf_vo/build/omnidata_mo
 #### DROID-SLAM
 ```bash
 gdown '1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh&confirm=t' -O nerf_vo/build/droid_slam/
+# If gdown does not work, please manulaly download it from https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh
 ```
 
 ### Build NeRF-SLAM
@@ -130,6 +136,7 @@ make python-install
 
 #### Build NeRF-SLAM
 ```bash
+cd ../../../
 cd nerf_vo/thirdparty/nerf_slam
 python setup.py install
 ```
@@ -158,6 +165,7 @@ bash scripts/download_tum_rgbd.sh
 
 ## Execution
 ```bash
+cd ../../../
 python run.py
 ```
 
@@ -173,4 +181,10 @@ If you find our code or paper useful, please cite:
 ```
 
 ## Contact
-Contact [Jens Naumann](mailto:jens.naumann@tum.de) and [Xingxing Zuo](mailto:xingxing.zuo@tum.de) for questions, comments and bug reports.
+Contact [Jens Naumann](mailto:jens.naumann@tum.de) and [Xingxing Zuo](mailto:xingxing.zuo@tum.de) for questions and comments.
+
+
+
+### Acknolegement
+
+The implementation of NeRF-VO borrows many modules from [nerfstudio](https://docs.nerf.studio/), [DPVO](https://github.com/princeton-vl/DPVO), [DROID-SLAM](https://github.com/princeton-vl/DROID-SLAM),  [OmiDepth](https://github.com/EPFL-VILAB/omnidata),  [Instant-NGP](https://github.com/NVlabs/instant-ngp) , [NeRF-SLAM](https://github.com/ToniRV/NeRF-SLAM), etc., and we sincerely thank the contributors of them for their contributions to the community.
